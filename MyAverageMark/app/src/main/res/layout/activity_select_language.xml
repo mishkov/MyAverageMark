@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- select language -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SelectLanguage">
+
+    <TextView
+        android:id="@+id/selectLangText"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center_horizontal"
+        android:text="@string/select_lang"
+        android:textColor="@color/grayForText1"
+        android:textSize="43sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <Spinner
+        style="@style/CustomSpinnerIcon"
+        android:id="@+id/selectLangSpinner"
+        android:layout_width="408dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/lang_selector"
+        android:elevation="25dp"
+        android:popupBackground="@drawable/lang_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="36dp"
+        android:textSize="22sp"
+        android:elevation="25dp"
+        android:text="@string/exit_button"
+        android:textColor="@color/exitButtonText"
+        android:background="@drawable/exit_button"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
